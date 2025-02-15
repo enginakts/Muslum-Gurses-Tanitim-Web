@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinema Kariyeri - Müslüm Gürses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar (index.html'den kopyalanacak) -->
+
+    <!-- Sayfa Başlığı -->
+    <div class="page-header">
+        <div class="container">
+            <h1>SİNEMA KARİYERİ</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                    <li class="breadcrumb-item active">Sinema</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Sinema Bölümü -->
+    <section class="cinema-section">
+        <div class="container">
+            <div class="row">
+                <!-- Film Listesi -->
+                <div class="col-lg-8">
+                    <div class="movies-timeline">
+                        <!-- Film 1 -->
+                        <div class="movie-card">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="film1.jpg" alt="Film 1" class="img-fluid rounded">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="movie-info">
+                                        <h3>Müslüm</h3>
+                                        <p class="year">2018</p>
+                                        <p class="description">
+                                            Müslüm Gürses'in hayatını anlatan biyografik film...
+                                        </p>
+                                        <div class="movie-details">
+                                            <span><i class="fas fa-user"></i> Yönetmen: Can Ulkay, Ketche</span>
+                                            <span><i class="fas fa-star"></i> Başrol: Timuçin Esen</span>
+                                        </div>
+                                        <button class="btn btn-outline-dark mt-3" data-bs-toggle="modal" data-bs-target="#movieModal1">
+                                            Detaylar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Diğer filmler benzer şekilde eklenecek -->
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="cinema-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>Sinema Kariyeri</h3>
+                            <div class="stats-box">
+                                <div class="stat-item">
+                                    <h4>Toplam Film</h4>
+                                    <p>38</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>Aktif Yıllar</h4>
+                                    <p>1973 - 2009</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>Ödüller</h4>
+                                    <p>12</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3>Öne Çıkan Filmler</h3>
+                            <ul class="featured-movies">
+                                <li>
+                                    <img src="film-thumb1.jpg" alt="Film 1" class="thumb">
+                                    <div class="movie-meta">
+                                        <h5>Sevdanın Bedeli</h5>
+                                        <span>1983</span>
+                                    </div>
+                                </li>
+                                <!-- Diğer öne çıkan filmler -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Film Modal -->
+    <div class="modal fade" id="movieModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Müslüm (2018)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="film1.jpg" alt="Film 1" class="img-fluid">
+                        </div>
+                        <div class="col-md-8">
+                            <h4>Film Detayları</h4>
+                            <p>Film hakkında detaylı bilgi...</p>
+                            <h5>Oyuncu Kadrosu</h5>
+                            <ul>
+                                <li>Timuçin Esen - Müslüm Gürses</li>
+                                <li>Zerrin Tekindor - Muhterem Nur</li>
+                                <!-- Diğer oyuncular -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (index.html'den kopyalanacak) -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

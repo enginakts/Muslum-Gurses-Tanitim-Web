@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müslüm Gürses - Arabesk'in Babası</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MÜSLÜM GÜRSES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Biyografi
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="yasam-oykusu.html">Yaşam Öyküsü</a></li>
+                            <li><a class="dropdown-item" href="kariyeri.html">Kariyeri</a></li>
+                            <li><a class="dropdown-item" href="ozel-hayati.html">Özel Hayatı</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Müzikleri
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="albumleri.html">Albümleri</a></li>
+                            <li><a class="dropdown-item" href="singlelar.html">Single'ları</a></li>
+                            <li><a class="dropdown-item" href="konserler.html">Konser Kayıtları</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sinema.html">Sinema</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hayran-kitlesi.html">Hayran Kitlesi</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Etki ve Mirasları
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="muzik-dunyasina-etkisi.html">Müzik Dünyasına Etkisi</a></li>
+                            <li><a class="dropdown-item" href="odulleri.html">Ödülleri</a></li>
+                            <li><a class="dropdown-item" href="anma-etkinlikleri.html">Anma Etkinlikleri</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="arsiv.html">Arşiv</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section yerine Carousel Section -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-overlay"></div>
+                <img src="slide1.jpg" class="d-block w-100" alt="Müslüm Gürses 1">
+                <div class="carousel-caption">
+                    <h1>MÜSLÜM GÜRSES</h1>
+                    <p class="lead">Arabesk Müziğin Unutulmaz Sesi</p>
+                    <a href="#" class="btn btn-outline-light btn-lg mt-3">Hayatını Keşfet</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-overlay"></div>
+                <img src="slide2.jpg" class="d-block w-100" alt="Müslüm Gürses 2">
+                <div class="carousel-caption">
+                    <h1>KONSERLER</h1>
+                    <p class="lead">Unutulmaz Sahne Performansları</p>
+                    <a href="#" class="btn btn-outline-light btn-lg mt-3">Konserleri İzle</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-overlay"></div>
+                <img src="slide3.jpg" class="d-block w-100" alt="Müslüm Gürses 3">
+                <div class="carousel-caption">
+                    <h1>ALBÜMLER</h1>
+                    <p class="lead">Tüm Zamanların En İyi Eserleri</p>
+                    <a href="#" class="btn btn-outline-light btn-lg mt-3">Müzikleri Dinle</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Featured Section -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Müslüm Baba'nın Dünyası</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="muzik.jpg" class="card-img-top" alt="Müzikleri">
+                        <div class="card-body">
+                            <h5 class="card-title">Unutulmaz Eserler</h5>
+                            <p class="card-text">Müslüm Gürses'in en sevilen şarkıları ve albümlerini keşfedin.</p>
+                            <a href="#" class="btn btn-dark">Müzikleri Dinle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="sinema.jpg" class="card-img-top" alt="Sinema Hayatı">
+                        <div class="card-body">
+                            <h5 class="card-title">Sinema Kariyeri</h5>
+                            <p class="card-text">Beyaz perdedeki unutulmaz performansları ve filmleri.</p>
+                            <a href="#" class="btn btn-dark">Filmleri İncele</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="arsiv.jpg" class="card-img-top" alt="Arşiv">
+                        <div class="card-body">
+                            <h5 class="card-title">Özel Arşiv</h5>
+                            <p class="card-text">Nadir fotoğraflar ve özel anlar koleksiyonu.</p>
+                            <a href="#" class="btn btn-dark">Arşivi Gör</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Müslüm Gürses</h5>
+                    <p>Türk arabesk müziğinin unutulmaz sesi...</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Hızlı Bağlantılar</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Biyografi</a></li>
+                        <li><a href="#" class="text-white">Müzikleri</a></li>
+                        <li><a href="#" class="text-white">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Bizi Takip Edin</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2024 Müslüm Gürses Resmi Web Sitesi. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

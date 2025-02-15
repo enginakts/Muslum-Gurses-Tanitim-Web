@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konser Kayıtları - Müslüm Gürses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar (index.html'den kopyalanacak) -->
+
+    <!-- Sayfa Başlığı -->
+    <div class="page-header">
+        <div class="container">
+            <h1>KONSER KAYITLARI</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                    <li class="breadcrumb-item">Müzikleri</li>
+                    <li class="breadcrumb-item active">Konser Kayıtları</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Konserler Section -->
+    <section class="concerts-section">
+        <div class="container">
+            <div class="row">
+                <!-- Konser Galerisi -->
+                <div class="col-lg-8">
+                    <!-- Öne Çıkan Konser -->
+                    <div class="featured-concert">
+                        <div class="concert-video">
+                            <img src="konser1.jpg" alt="Konser 1" class="img-fluid">
+                            <div class="play-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="concert-info">
+                            <h3>Harbiye Açıkhava Konseri</h3>
+                            <p class="date">15 Ağustos 1998</p>
+                            <p class="description">
+                                Müslüm Gürses'in unutulmaz Harbiye Açıkhava performansı...
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Konser Grid -->
+                    <div class="concerts-grid mt-5">
+                        <h3 class="section-title">Diğer Konserler</h3>
+                        <div class="row">
+                            <!-- Konser Kartı -->
+                            <div class="col-md-6 mb-4">
+                                <div class="concert-card">
+                                    <div class="concert-thumbnail">
+                                        <img src="konser2.jpg" alt="Konser 2" class="img-fluid">
+                                        <div class="duration">2:15:30</div>
+                                    </div>
+                                    <div class="concert-details">
+                                        <h4>İzmir Fuarı Konseri</h4>
+                                        <p class="date">1995</p>
+                                        <button class="btn btn-outline-dark btn-sm">İzle</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Diğer konser kartları -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="concerts-sidebar">
+                        <div class="sidebar-widget">
+                            <h3>Konser İstatistikleri</h3>
+                            <div class="stats-box">
+                                <div class="stat-item">
+                                    <h4>Toplam Konser</h4>
+                                    <p>1000+</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>Kayıtlı Konser</h4>
+                                    <p>150+</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3>Popüler Mekanlar</h3>
+                            <ul class="venue-list">
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Harbiye Açıkhava Tiyatrosu</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>İzmir Fuarı</span>
+                                </li>
+                                <!-- Diğer mekanlar -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (index.html'den kopyalanacak) -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

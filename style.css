@@ -1,0 +1,1103 @@
+/* Ana stiller */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar stilleri */
+.navbar {
+    background-color: #1a1a1a;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: #ffd700 !important;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.dropdown-menu {
+    background-color: #1a1a1a;
+}
+
+.dropdown-item {
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    background-color: #333;
+    color: #ffd700;
+}
+
+/* Carousel stilleri */
+.carousel {
+    margin-bottom: 50px;
+}
+
+.carousel-item {
+    height: 80vh;
+    position: relative;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption {
+    bottom: 50%;
+    transform: translateY(50%);
+    padding-bottom: 0;
+}
+
+.carousel-caption h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffd700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.carousel-caption .lead {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.carousel-indicators {
+    bottom: 30px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Responsive ayarlar */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 60vh;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+    }
+    
+    .carousel-caption .lead {
+        font-size: 1.2rem;
+    }
+}
+
+/* Kartlar bölümü */
+.featured-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #1a1a1a;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer stilleri */
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffd700;
+}
+
+/* Sayfa başlık stili */
+.page-header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('header-bg.jpg') center/cover no-repeat;
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 50px;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    color: #ffd700;
+}
+
+.breadcrumb {
+    background: transparent;
+}
+
+.breadcrumb-item a {
+    color: #ffd700;
+}
+
+/* Biyografi sayfası stilleri */
+.biography-sidebar {
+    position: sticky;
+    top: 20px;
+}
+
+.info-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    padding: 20px 0;
+    border-left: 2px solid #ffd700;
+    margin-left: 20px;
+    position: relative;
+}
+
+.timeline-item .year {
+    font-weight: bold;
+    color: #ffd700;
+    margin-left: 20px;
+}
+
+.timeline-item .content {
+    margin-left: 20px;
+}
+
+/* Müzik sayfası stilleri */
+.filters-sidebar {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.album-card {
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.album-card:hover {
+    transform: translateY(-5px);
+}
+
+.album-info {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Biyografi makalesi stilleri */
+.biography-article {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.biography-article h2 {
+    color: #1a1a1a;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.quote-box {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-left: 5px solid #ffd700;
+    margin: 2rem 0;
+}
+
+.quote-box blockquote {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin: 0;
+}
+
+.quote-box footer {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* Timeline listesi */
+.timeline-list {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+.timeline-list::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: #ffd700;
+}
+
+.timeline-list li {
+    padding-left: 20px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.timeline-list .date {
+    font-weight: bold;
+    color: #1a1a1a;
+    display: block;
+}
+
+.timeline-list .event {
+    color: #666;
+}
+
+/* Sidebar widget */
+.sidebar-widget {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.sidebar-widget h3 {
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ffd700;
+}
+
+/* Albümler sayfası stilleri */
+.albums-section {
+    padding: 50px 0;
+}
+
+.album-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.album-card:hover {
+    transform: translateY(-5px);
+}
+
+.album-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.album-info h4 {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.album-info .year {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.track-list {
+    padding-left: 20px;
+}
+
+.track-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Modal stilleri */
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    background: #1a1a1a;
+    color: white;
+}
+
+.modal-header .btn-close {
+    color: white;
+}
+
+/* Sinema sayfası stilleri */
+.cinema-section {
+    padding: 50px 0;
+}
+
+.movie-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.movie-info h3 {
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+.movie-info .year {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.movie-details {
+    margin-top: 15px;
+}
+
+.movie-details span {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.movie-details i {
+    margin-right: 8px;
+    color: #ffd700;
+}
+
+/* Sinema sidebar stilleri */
+.stats-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 10px;
+}
+
+.stat-item h4 {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.stat-item p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.featured-movies {
+    list-style: none;
+    padding: 0;
+}
+
+.featured-movies li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.featured-movies .thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.movie-meta h5 {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.movie-meta span {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* Singles sayfası stilleri */
+.singles-section {
+    padding: 50px 0;
+}
+
+.single-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.single-item:hover {
+    transform: translateY(-3px);
+}
+
+.single-cover {
+    position: relative;
+    cursor: pointer;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.single-cover:hover .play-button {
+    opacity: 1;
+}
+
+/* Konserler sayfası stilleri */
+.concerts-section {
+    padding: 50px 0;
+}
+
+.featured-concert {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.concert-video {
+    position: relative;
+    cursor: pointer;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.play-overlay i {
+    font-size: 64px;
+    color: white;
+}
+
+.concert-video:hover .play-overlay {
+    opacity: 1;
+}
+
+.concert-info {
+    padding: 20px;
+}
+
+.concert-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.concert-thumbnail {
+    position: relative;
+}
+
+.duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.concert-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.venue-list {
+    list-style: none;
+    padding: 0;
+}
+
+.venue-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.venue-list i {
+    color: #ffd700;
+    margin-right: 10px;
+}
+
+/* Ödüller sayfası stilleri */
+.awards-section {
+    padding: 50px 0;
+}
+
+.award-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.award-icon {
+    font-size: 2rem;
+    color: #ffd700;
+    margin-right: 20px;
+}
+
+.award-info h3 {
+    margin: 0;
+    color: #1a1a1a;
+}
+
+.year-group {
+    margin-bottom: 40px;
+}
+
+.year-group h2 {
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffd700;
+}
+
+.achievements-list {
+    list-style: none;
+    padding: 0;
+}
+
+.achievements-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.achievements-list i {
+    color: #ffd700;
+    margin-right: 10px;
+}
+
+/* Anma Etkinlikleri sayfası stilleri */
+.memorial-section {
+    padding: 50px 0;
+}
+
+.upcoming-event {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+}
+
+.event-info {
+    padding: 20px;
+}
+
+.event-details {
+    margin: 20px 0;
+}
+
+.event-details p {
+    margin-bottom: 10px;
+}
+
+.event-details i {
+    color: #ffd700;
+    margin-right: 10px;
+}
+
+.event-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card-info {
+    padding: 15px;
+}
+
+.event-card-info h4 {
+    margin-bottom: 5px;
+}
+
+.event-card-info .date,
+.event-card-info .location {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Arşiv sayfası stilleri */
+.archive-section {
+    padding: 50px 0;
+}
+
+.archive-categories .nav-pills .nav-link {
+    color: #1a1a1a;
+    margin: 0 10px;
+}
+
+.archive-categories .nav-pills .nav-link.active {
+    background-color: #ffd700;
+    color: #1a1a1a;
+}
+
+.archive-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.archive-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.archive-item:hover .archive-overlay {
+    transform: translateY(0);
+}
+
+.archive-info {
+    color: white;
+}
+
+.video-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.document-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.document-icon {
+    font-size: 2rem;
+    color: #ffd700;
+    margin-right: 20px;
+}
+
+/* Müzik Dünyasına Etkisi sayfası stilleri */
+.impact-section {
+    padding: 50px 0;
+}
+
+.impact-article {
+    line-height: 1.8;
+}
+
+.artist-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.artist-card img {
+    margin-bottom: 15px;
+}
+
+.contribution-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contribution-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.contribution-list i {
+    color: #ffd700;
+    margin-right: 10px;
+}
+
+/* Kariyer sayfası stilleri */
+.career-section {
+    padding: 50px 0;
+}
+
+.timeline-period {
+    margin-bottom: 40px;
+}
+
+.timeline-period h2 {
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffd700;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: #ffd700;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.milestone-list {
+    list-style: none;
+    padding: 0;
+}
+
+.milestone-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Özel Hayat sayfası stilleri */
+.personal-life-section {
+    padding: 50px 0;
+}
+
+.personal-article {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.image-caption {
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.personal-info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.personal-info-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.moments-timeline {
+    position: relative;
+    padding-left: 20px;
+}
+
+.moment-item {
+    position: relative;
+    padding: 15px 0;
+    border-left: 2px solid #ffd700;
+    margin-left: 10px;
+}
+
+.moment-item .date {
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-right: 10px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.gallery-item img {
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* İletişim sayfası stilleri */
+.contact-section {
+    padding: 50px 0;
+}
+
+.contact-form-wrapper {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.contact-form .form-control {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.contact-form .form-control:focus {
+    border-color: #ffd700;
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+.contact-info .info-box {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact-details {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-details li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.contact-details i {
+    color: #ffd700;
+    font-size: 20px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.contact-details h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #1a1a1a;
+}
+
+.contact-details p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.social-box {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    border-radius: 50%;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: #ffd700;
+    color: white;
+}
+
+.map-box {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Hayran Kitlesi sayfası stilleri */
+.fans-section {
+    padding: 50px 0;
+}
+
+.fans-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.story-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.story-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.fan-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.story-meta h4 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.story-meta p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.fan-clubs-list {
+    list-style: none;
+    padding: 0;
+}
+
+.fan-clubs-list li {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.fan-clubs-list i {
+    font-size: 24px;
+    color: #ffd700;
+    margin-right: 15px;
+}
+
+.social-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-stat-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.social-stat-item i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #1a1a1a;
+}
+
+.social-stat-item span {
+    font-weight: 500;
+} 
